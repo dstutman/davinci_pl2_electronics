@@ -1,0 +1,1 @@
+Is a rad-hardened watchdog timer necessary? If this fails pathologically it could take out the payload.
