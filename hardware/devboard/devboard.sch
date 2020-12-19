@@ -429,4 +429,28 @@ F 3 "" H 9800 4650 60  0000 C CNN
 	1    10600 4150
 	1    0    0    -1  
 $EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FDE214E
+P 2050 2400
+F 0 "#PWR?" H 2050 2150 50  0001 C CNN
+F 1 "GND" H 2055 2227 50  0000 C CNN
+F 2 "" H 2050 2400 50  0001 C CNN
+F 3 "" H 2050 2400 50  0001 C CNN
+	1    2050 2400
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FDE278B
+P 2050 2600
+F 0 "#PWR?" H 2050 2350 50  0001 C CNN
+F 1 "GND" H 2055 2427 50  0000 C CNN
+F 2 "" H 2050 2600 50  0001 C CNN
+F 3 "" H 2050 2600 50  0001 C CNN
+	1    2050 2600
+	0    1    1    0   
+$EndComp
+Text Notes 4050 2150 0    25   ~ 0
+Is a ferrite on the supply necessary in this application?
 $EndSCHEMATC
