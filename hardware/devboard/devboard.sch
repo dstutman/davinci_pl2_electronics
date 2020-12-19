@@ -196,50 +196,50 @@ Wire Wire Line
 Wire Wire Line
 	900  2450 900  2500
 Connection ~ 900  2450
-Text Notes 9450 6350 0    50   ~ 0
+Text Notes 9450 6150 0    50   ~ 0
 Debug Adapter
-NoConn ~ 9600 6100
-Text Label 10250 6200 2    50   ~ 0
-GND
+NoConn ~ 9600 5900
 Text Label 10250 6000 2    50   ~ 0
-RST
-Text Label 10250 5900 2    50   ~ 0
-VCC
-Text Label 10250 5800 2    50   ~ 0
 GND
-Text Label 9450 6200 0    50   ~ 0
-TDI
+Text Label 10250 5800 2    50   ~ 0
+RST
+Text Label 10250 5700 2    50   ~ 0
+VCC
+Text Label 10250 5600 2    50   ~ 0
+GND
 Text Label 9450 6000 0    50   ~ 0
-TMS
-Text Label 9450 5900 0    50   ~ 0
-TDO
+TDI
 Text Label 9450 5800 0    50   ~ 0
+TMS
+Text Label 9450 5700 0    50   ~ 0
+TDO
+Text Label 9450 5600 0    50   ~ 0
 TCK
-Wire Wire Line
-	10250 6200 10100 6200
 Wire Wire Line
 	10250 6000 10100 6000
 Wire Wire Line
-	10250 5900 10100 5900
-Wire Wire Line
 	10250 5800 10100 5800
 Wire Wire Line
-	9600 6200 9450 6200
+	10250 5700 10100 5700
+Wire Wire Line
+	10250 5600 10100 5600
 Wire Wire Line
 	9600 6000 9450 6000
 Wire Wire Line
-	9600 5900 9450 5900
-Wire Wire Line
 	9600 5800 9450 5800
+Wire Wire Line
+	9600 5700 9450 5700
+Wire Wire Line
+	9600 5600 9450 5600
 $Comp
 L Connector_Generic:Conn_02x05_Odd_Even J?
 U 1 1 5FDF7679
-P 9800 6000
-F 0 "J?" H 9850 6417 50  0000 C CNN
-F 1 "Conn_02x05_Odd_Even" H 9850 6326 50  0000 C CNN
-F 2 "Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical" H 9800 6000 50  0001 C CNN
-F 3 "~" H 9800 6000 50  0001 C CNN
-	1    9800 6000
+P 9800 5800
+F 0 "J?" H 9850 6217 50  0000 C CNN
+F 1 "Conn_02x05_Odd_Even" H 9850 6126 50  0000 C CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical" H 9800 5800 50  0001 C CNN
+F 3 "~" H 9800 5800 50  0001 C CNN
+	1    9800 5800
 	1    0    0    -1  
 $EndComp
 Text Notes 3650 2750 0    50   ~ 0
@@ -247,37 +247,37 @@ ATMega decoupling
 $Comp
 L Device:C_Small C?
 U 1 1 5FE0A3D1
-P 10600 5950
-F 0 "C?" H 10692 5996 50  0000 L CNN
-F 1 "100n" H 10692 5905 50  0000 L CNN
-F 2 "" H 10600 5950 50  0001 C CNN
-F 3 "~" H 10600 5950 50  0001 C CNN
-	1    10600 5950
+P 10600 5750
+F 0 "C?" H 10692 5796 50  0000 L CNN
+F 1 "100n" H 10692 5705 50  0000 L CNN
+F 2 "" H 10600 5750 50  0001 C CNN
+F 3 "~" H 10600 5750 50  0001 C CNN
+	1    10600 5750
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:VCC #PWR?
 U 1 1 5FE0A3D7
-P 10600 5850
-F 0 "#PWR?" H 10600 5700 50  0001 C CNN
-F 1 "VCC" H 10615 6023 50  0000 C CNN
-F 2 "" H 10600 5850 50  0001 C CNN
-F 3 "" H 10600 5850 50  0001 C CNN
-	1    10600 5850
+P 10600 5650
+F 0 "#PWR?" H 10600 5500 50  0001 C CNN
+F 1 "VCC" H 10615 5823 50  0000 C CNN
+F 2 "" H 10600 5650 50  0001 C CNN
+F 3 "" H 10600 5650 50  0001 C CNN
+	1    10600 5650
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5FE0A3E1
-P 10600 6050
-F 0 "#PWR?" H 10600 5800 50  0001 C CNN
-F 1 "GND" H 10605 5877 50  0000 C CNN
-F 2 "" H 10600 6050 50  0001 C CNN
-F 3 "" H 10600 6050 50  0001 C CNN
-	1    10600 6050
+P 10600 5850
+F 0 "#PWR?" H 10600 5600 50  0001 C CNN
+F 1 "GND" H 10605 5677 50  0000 C CNN
+F 2 "" H 10600 5850 50  0001 C CNN
+F 3 "" H 10600 5850 50  0001 C CNN
+	1    10600 5850
 	1    0    0    -1  
 $EndComp
-Text Notes 10350 6350 0    50   ~ 0
+Text Notes 10350 6150 0    50   ~ 0
 Debug decoupling
 Text Label 1900 4700 0    50   ~ 0
 TDI
@@ -295,7 +295,7 @@ Wire Wire Line
 	2050 4600 1900 4600
 Wire Wire Line
 	2050 4400 1900 4400
-NoConn ~ 10100 6100
+NoConn ~ 10100 5900
 $Comp
 L MCU_Microchip_ATmega:ATmega128L-8AU U?
 U 1 1 5FDDF59E
@@ -329,106 +329,7 @@ Text Notes 550  1250 0    50   ~ 0
 CRITICAL ELEMENTS:\nMCU\nReset circuit\nDebug circuit\nExternal tuning or clock oscillator?\nInter-element connector\nOBC connector\nDedicated watchdog\nTest points
 Text Notes 2100 700  0    50   ~ 0
 CRITICAL NOTES:\nUse Tantalum capacitors
-$Comp
-L davinci:48LM01-I_SM U?
-U 1 1 5FE28E87
-P 8000 1450
-F 0 "U?" H 8000 2137 60  0000 C CNN
-F 1 "48LM01-I_SM" H 8000 2031 60  0000 C CNN
-F 2 "SOIJ8_SM_MCH" H 8000 2190 60  0001 C CNN
-F 3 "" H 7200 1950 60  0000 C CNN
-	1    8000 1450
-	1    0    0    -1  
-$EndComp
 NoConn ~ 2050 2800
-$Comp
-L davinci:48LM01-I_SM U?
-U 1 1 5FE32278
-P 9300 1450
-F 0 "U?" H 9300 2137 60  0000 C CNN
-F 1 "48LM01-I_SM" H 9300 2031 60  0000 C CNN
-F 2 "SOIJ8_SM_MCH" H 9300 2190 60  0001 C CNN
-F 3 "" H 8500 1950 60  0000 C CNN
-	1    9300 1450
-	1    0    0    -1  
-$EndComp
-$Comp
-L davinci:48LM01-I_SM U?
-U 1 1 5FE3330F
-P 10600 1450
-F 0 "U?" H 10600 2137 60  0000 C CNN
-F 1 "48LM01-I_SM" H 10600 2031 60  0000 C CNN
-F 2 "SOIJ8_SM_MCH" H 10600 2190 60  0001 C CNN
-F 3 "" H 9800 1950 60  0000 C CNN
-	1    10600 1450
-	1    0    0    -1  
-$EndComp
-$Comp
-L davinci:48LM01-I_SM U?
-U 1 1 5FE35CA9
-P 8000 2800
-F 0 "U?" H 8000 3487 60  0000 C CNN
-F 1 "48LM01-I_SM" H 8000 3381 60  0000 C CNN
-F 2 "SOIJ8_SM_MCH" H 8000 3540 60  0001 C CNN
-F 3 "" H 7200 3300 60  0000 C CNN
-	1    8000 2800
-	1    0    0    -1  
-$EndComp
-$Comp
-L davinci:48LM01-I_SM U?
-U 1 1 5FE35CAF
-P 9300 2800
-F 0 "U?" H 9300 3487 60  0000 C CNN
-F 1 "48LM01-I_SM" H 9300 3381 60  0000 C CNN
-F 2 "SOIJ8_SM_MCH" H 9300 3540 60  0001 C CNN
-F 3 "" H 8500 3300 60  0000 C CNN
-	1    9300 2800
-	1    0    0    -1  
-$EndComp
-$Comp
-L davinci:48LM01-I_SM U?
-U 1 1 5FE35CB5
-P 10600 2800
-F 0 "U?" H 10600 3487 60  0000 C CNN
-F 1 "48LM01-I_SM" H 10600 3381 60  0000 C CNN
-F 2 "SOIJ8_SM_MCH" H 10600 3540 60  0001 C CNN
-F 3 "" H 9800 3300 60  0000 C CNN
-	1    10600 2800
-	1    0    0    -1  
-$EndComp
-$Comp
-L davinci:48LM01-I_SM U?
-U 1 1 5FE37891
-P 8000 4150
-F 0 "U?" H 8000 4837 60  0000 C CNN
-F 1 "48LM01-I_SM" H 8000 4731 60  0000 C CNN
-F 2 "SOIJ8_SM_MCH" H 8000 4890 60  0001 C CNN
-F 3 "" H 7200 4650 60  0000 C CNN
-	1    8000 4150
-	1    0    0    -1  
-$EndComp
-$Comp
-L davinci:48LM01-I_SM U?
-U 1 1 5FE37897
-P 9300 4150
-F 0 "U?" H 9300 4837 60  0000 C CNN
-F 1 "48LM01-I_SM" H 9300 4731 60  0000 C CNN
-F 2 "SOIJ8_SM_MCH" H 9300 4890 60  0001 C CNN
-F 3 "" H 8500 4650 60  0000 C CNN
-	1    9300 4150
-	1    0    0    -1  
-$EndComp
-$Comp
-L davinci:48LM01-I_SM U?
-U 1 1 5FE3789D
-P 10600 4150
-F 0 "U?" H 10600 4837 60  0000 C CNN
-F 1 "48LM01-I_SM" H 10600 4731 60  0000 C CNN
-F 2 "SOIJ8_SM_MCH" H 10600 4890 60  0001 C CNN
-F 3 "" H 9800 4650 60  0000 C CNN
-	1    10600 4150
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5FDE214E
@@ -453,4 +354,310 @@ F 3 "" H 2050 2600 50  0001 C CNN
 $EndComp
 Text Notes 4050 2150 0    25   ~ 0
 Is a ferrite on the supply necessary in this application?
+Wire Wire Line
+	9450 2100 9450 1350
+Wire Wire Line
+	9500 2250 9500 1450
+Wire Wire Line
+	9700 1900 9750 1900
+Wire Wire Line
+	10950 1150 10950 2700
+$Comp
+L davinci:48LM01-I_SM U?
+U 1 1 5FE3330F
+P 10350 1550
+F 0 "U?" H 10350 2237 60  0000 C CNN
+F 1 "48LM01-I_SM" H 10350 2131 60  0000 C CNN
+F 2 "SOIJ8_SM_MCH" H 10350 2290 60  0001 C CNN
+F 3 "https://ww1.microchip.com/downloads/en/DeviceDoc/20006008C.pdf" H 9550 2050 60  0001 C CNN
+	1    10350 1550
+	1    0    0    -1  
+$EndComp
+Entry Wire Line
+	9600 2500 9700 2400
+Entry Wire Line
+	9400 2350 9500 2250
+Entry Wire Line
+	9350 2200 9450 2100
+Entry Wire Line
+	10850 2800 10950 2700
+Text Label 7150 2800 0    50   ~ 0
+MISO_B1
+Text Label 7150 2350 0    50   ~ 0
+MOSI_B1
+$Comp
+L power:GND #PWR?
+U 1 1 5FE16B07
+P 7000 2550
+F 0 "#PWR?" H 7000 2300 50  0001 C CNN
+F 1 "GND" V 7005 2422 50  0000 R CNN
+F 2 "" H 7000 2550 50  0001 C CNN
+F 3 "" H 7000 2550 50  0001 C CNN
+	1    7000 2550
+	0    1    1    0   
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5FE181AE
+P 7000 2400
+F 0 "#PWR?" H 7000 2250 50  0001 C CNN
+F 1 "VCC" V 7015 2527 50  0000 L CNN
+F 2 "" H 7000 2400 50  0001 C CNN
+F 3 "" H 7000 2400 50  0001 C CNN
+	1    7000 2400
+	0    -1   -1   0   
+$EndComp
+Entry Wire Line
+	7150 2650 7050 2550
+Wire Wire Line
+	7050 2550 7000 2550
+Entry Wire Line
+	7150 2500 7050 2400
+Wire Wire Line
+	7050 2400 7000 2400
+Text Notes 7150 850  0    50   ~ 0
+Memory Banks
+$Comp
+L Device:C_Small C?
+U 1 1 5FE60165
+P 9750 1800
+F 0 "C?" H 9842 1846 50  0000 L CNN
+F 1 "63n" H 9842 1755 50  0000 L CNN
+F 2 "" H 9750 1800 50  0001 C CNN
+F 3 "~" H 9750 1800 50  0001 C CNN
+	1    9750 1800
+	-1   0    0    1   
+$EndComp
+Connection ~ 9750 1900
+Wire Wire Line
+	9500 1450 9750 1450
+Wire Wire Line
+	9450 1350 9750 1350
+Entry Wire Line
+	9650 2650 9750 2550
+Wire Wire Line
+	9700 1900 9700 2400
+Wire Wire Line
+	9750 2550 9750 2000
+Text Label 7150 2200 0    50   ~ 0
+SCK_B1
+Wire Wire Line
+	7700 2100 7700 1350
+Wire Wire Line
+	7750 2250 7750 1450
+Wire Wire Line
+	7950 1900 8000 1900
+Wire Wire Line
+	9200 1150 9200 2700
+$Comp
+L davinci:48LM01-I_SM U?
+U 1 1 5FE79852
+P 8600 1550
+F 0 "U?" H 8600 2237 60  0000 C CNN
+F 1 "48LM01-I_SM" H 8600 2131 60  0000 C CNN
+F 2 "SOIJ8_SM_MCH" H 8600 2290 60  0001 C CNN
+F 3 "https://ww1.microchip.com/downloads/en/DeviceDoc/20006008C.pdf" H 7800 2050 60  0001 C CNN
+	1    8600 1550
+	1    0    0    -1  
+$EndComp
+Entry Wire Line
+	7850 2500 7950 2400
+Entry Wire Line
+	7650 2350 7750 2250
+Entry Wire Line
+	7600 2200 7700 2100
+Entry Wire Line
+	9100 2800 9200 2700
+$Comp
+L Device:C_Small C?
+U 1 1 5FE7985C
+P 8000 1800
+F 0 "C?" H 8092 1846 50  0000 L CNN
+F 1 "63n" H 8092 1755 50  0000 L CNN
+F 2 "" H 8000 1800 50  0001 C CNN
+F 3 "~" H 8000 1800 50  0001 C CNN
+	1    8000 1800
+	-1   0    0    1   
+$EndComp
+Connection ~ 8000 1900
+Wire Wire Line
+	7750 1450 8000 1450
+Wire Wire Line
+	7700 1350 8000 1350
+Entry Wire Line
+	7900 2650 8000 2550
+Wire Wire Line
+	7950 1900 7950 2400
+Wire Wire Line
+	8000 2550 8000 2000
+Text Label 7600 1150 0    50   ~ 0
+CS_C1
+Wire Wire Line
+	7600 1150 8000 1150
+Text Label 9350 1150 0    50   ~ 0
+CS_C2
+Wire Wire Line
+	9350 1150 9750 1150
+Wire Wire Line
+	9450 4200 9450 3450
+Wire Wire Line
+	9500 4350 9500 3550
+Wire Wire Line
+	9700 4000 9750 4000
+Wire Wire Line
+	10950 3250 10950 4800
+$Comp
+L davinci:48LM01-I_SM U?
+U 1 1 5FE9A292
+P 10350 3650
+F 0 "U?" H 10350 4337 60  0000 C CNN
+F 1 "48LM01-I_SM" H 10350 4231 60  0000 C CNN
+F 2 "SOIJ8_SM_MCH" H 10350 4390 60  0001 C CNN
+F 3 "https://ww1.microchip.com/downloads/en/DeviceDoc/20006008C.pdf" H 9550 4150 60  0001 C CNN
+	1    10350 3650
+	1    0    0    -1  
+$EndComp
+Entry Wire Line
+	9600 4600 9700 4500
+Entry Wire Line
+	9400 4450 9500 4350
+Entry Wire Line
+	9350 4300 9450 4200
+Entry Wire Line
+	10850 4900 10950 4800
+Text Label 7150 4900 0    50   ~ 0
+MISO_B2
+Text Label 7150 4450 0    50   ~ 0
+MOSI_B2
+$Comp
+L power:GND #PWR?
+U 1 1 5FE9A29E
+P 7000 4650
+F 0 "#PWR?" H 7000 4400 50  0001 C CNN
+F 1 "GND" V 7005 4522 50  0000 R CNN
+F 2 "" H 7000 4650 50  0001 C CNN
+F 3 "" H 7000 4650 50  0001 C CNN
+	1    7000 4650
+	0    1    1    0   
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5FE9A2A4
+P 7000 4500
+F 0 "#PWR?" H 7000 4350 50  0001 C CNN
+F 1 "VCC" V 7015 4627 50  0000 L CNN
+F 2 "" H 7000 4500 50  0001 C CNN
+F 3 "" H 7000 4500 50  0001 C CNN
+	1    7000 4500
+	0    -1   -1   0   
+$EndComp
+Entry Wire Line
+	7150 4750 7050 4650
+Wire Wire Line
+	7050 4650 7000 4650
+Entry Wire Line
+	7150 4600 7050 4500
+Wire Wire Line
+	7050 4500 7000 4500
+$Comp
+L Device:C_Small C?
+U 1 1 5FE9A2AE
+P 9750 3900
+F 0 "C?" H 9842 3946 50  0000 L CNN
+F 1 "63n" H 9842 3855 50  0000 L CNN
+F 2 "" H 9750 3900 50  0001 C CNN
+F 3 "~" H 9750 3900 50  0001 C CNN
+	1    9750 3900
+	-1   0    0    1   
+$EndComp
+Connection ~ 9750 4000
+Wire Wire Line
+	9500 3550 9750 3550
+Wire Wire Line
+	9450 3450 9750 3450
+Entry Wire Line
+	9650 4750 9750 4650
+Wire Wire Line
+	9700 4000 9700 4500
+Wire Wire Line
+	9750 4650 9750 4100
+Text Label 7150 4300 0    50   ~ 0
+SCK_B2
+Wire Wire Line
+	7700 4200 7700 3450
+Wire Wire Line
+	7750 4350 7750 3550
+Wire Wire Line
+	7950 4000 8000 4000
+Wire Wire Line
+	9200 3250 9200 4800
+$Comp
+L davinci:48LM01-I_SM U?
+U 1 1 5FE9A2BF
+P 8600 3650
+F 0 "U?" H 8600 4337 60  0000 C CNN
+F 1 "48LM01-I_SM" H 8600 4231 60  0000 C CNN
+F 2 "SOIJ8_SM_MCH" H 8600 4390 60  0001 C CNN
+F 3 "https://ww1.microchip.com/downloads/en/DeviceDoc/20006008C.pdf" H 7800 4150 60  0001 C CNN
+	1    8600 3650
+	1    0    0    -1  
+$EndComp
+Entry Wire Line
+	7850 4600 7950 4500
+Entry Wire Line
+	7650 4450 7750 4350
+Entry Wire Line
+	7600 4300 7700 4200
+Entry Wire Line
+	9100 4900 9200 4800
+$Comp
+L Device:C_Small C?
+U 1 1 5FE9A2C9
+P 8000 3900
+F 0 "C?" H 8092 3946 50  0000 L CNN
+F 1 "63n" H 8092 3855 50  0000 L CNN
+F 2 "" H 8000 3900 50  0001 C CNN
+F 3 "~" H 8000 3900 50  0001 C CNN
+	1    8000 3900
+	-1   0    0    1   
+$EndComp
+Connection ~ 8000 4000
+Wire Wire Line
+	7750 3550 8000 3550
+Wire Wire Line
+	7700 3450 8000 3450
+Entry Wire Line
+	7900 4750 8000 4650
+Wire Wire Line
+	7950 4000 7950 4500
+Wire Wire Line
+	8000 4650 8000 4100
+Text Label 7600 3250 0    50   ~ 0
+CS_C1
+Wire Wire Line
+	7600 3250 8000 3250
+Text Label 9350 3250 0    50   ~ 0
+CS_C2
+Wire Wire Line
+	9350 3250 9750 3250
+Wire Bus Line
+	7150 2800 10850 2800
+Wire Bus Line
+	7150 4900 10850 4900
+Wire Bus Line
+	7150 2500 10850 2500
+Wire Bus Line
+	7150 2350 10850 2350
+Wire Bus Line
+	7150 2200 10850 2200
+Wire Bus Line
+	7150 2650 10850 2650
+Wire Bus Line
+	7150 4600 10850 4600
+Wire Bus Line
+	7150 4450 10850 4450
+Wire Bus Line
+	7150 4300 10850 4300
+Wire Bus Line
+	7150 4750 10850 4750
 $EndSCHEMATC

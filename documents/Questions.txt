@@ -1,1 +1,2 @@
 Is a rad-hardened watchdog timer necessary? If this fails pathologically it could take out the payload.
+Is decoupling each memory chip in addition to VCAP necessary?
