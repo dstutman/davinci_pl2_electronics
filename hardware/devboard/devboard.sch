@@ -236,9 +236,7 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/doc2467.pdf" H 2650 3900 50
 	1    0    0    -1  
 $EndComp
 Text Notes 550  2100 0    25   ~ 0
-Should the JTAG reset line be\nplaced before or after reset \nprotection circuitry
-Text Notes 1350 1750 0    25   ~ 0
-Determine ESD Schottky value
+Should the JTAG reset line be\nplaced before or after current\nlimiting?
 Text Notes 550  1250 0    50   ~ 0
 CRITICAL ELEMENTS:\nMCU\nReset circuit\nDebug circuit\nExternal tuning or clock oscillator?\nOBC connector testpads\nDedicated watchdog\nTest points
 NoConn ~ 2050 2800
@@ -280,7 +278,7 @@ F 3 "~" H 9000 3600 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Text Notes 6350 2450 0    50   ~ 0
-CRITICAL NOTES:\nCapacitors must be C0G with 60% voltage derate
+CRITICAL:\nCapacitors must be C0G with 40% voltage derate
 Wire Wire Line
 	2650 1900 2650 1850
 Wire Wire Line
@@ -299,9 +297,9 @@ L Device:D_Schottky D?
 U 1 1 5FDF19D9
 P 1500 2000
 F 0 "D?" V 1454 2080 50  0000 L CNN
-F 1 "D_Schottky" V 1545 2080 50  0000 L CNN
+F 1 "3.3 VR" V 1545 2080 50  0000 L CNN
 F 2 "" H 1500 2000 50  0001 C CNN
-F 3 "~" H 1500 2000 50  0001 C CNN
+F 3 "" H 1500 2000 50  0001 C CNN
 	1    1500 2000
 	0    1    1    0   
 $EndComp
@@ -2439,5 +2437,5 @@ PA7
 Wire Wire Line
 	2200 8300 2400 8300
 Text Notes 950  9800 0    50   ~ 0
-CRITICAL NOTE:\nIn flight design, watchdog\n is responsibility of OBC.\nThis WDT rad-hardness concerns.
+CRITICAL:\nIn flight design, watchdog\nis responsibility of OBC.\nAvoids WDT rad-hardness concerns.
 $EndSCHEMATC
