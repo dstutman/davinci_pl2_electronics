@@ -4,4 +4,8 @@ $CMP 48LM01-I_SM
 F https://ww1.microchip.com/downloads/en/DeviceDoc/20006008C.pdf
 $ENDCMP
 #
+$CMP MC74VHCT126ADR2G
+F https://www.onsemi.com/pub/Collateral/MC74VHCT126A-D.PDF
+$ENDCMP
+#
 #End Doc Library
