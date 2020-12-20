@@ -157,19 +157,19 @@ F 3 "~" H 900 2400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 650  2200 0    50   ~ 0
-RST
-Text Notes 2400 7300 0    50   ~ 0
+~RST
+Text Notes 13550 8450 0    50   ~ 0
 Debug Adapter
-NoConn ~ 2400 7000
+NoConn ~ 13550 8150
 $Comp
 L Connector_Generic:Conn_02x05_Odd_Even J?
 U 1 1 5FDF7679
-P 2600 6900
-F 0 "J?" H 2650 7317 50  0000 C CNN
-F 1 "Conn_02x05_Odd_Even" H 2650 7226 50  0000 C CNN
-F 2 "Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical" H 2600 6900 50  0001 C CNN
-F 3 "~" H 2600 6900 50  0001 C CNN
-	1    2600 6900
+P 13750 8050
+F 0 "J?" H 13800 8467 50  0000 C CNN
+F 1 "Conn_02x05_Odd_Even" H 13800 8376 50  0000 C CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical" H 13750 8050 50  0001 C CNN
+F 3 "~" H 13750 8050 50  0001 C CNN
+	1    13750 8050
 	1    0    0    -1  
 $EndComp
 Text Notes 3900 2850 0    50   ~ 0
@@ -177,34 +177,34 @@ ATMega decoupling
 $Comp
 L Device:C_Small C?
 U 1 1 5FE0A3D1
-P 3400 6900
-F 0 "C?" H 3492 6946 50  0000 L CNN
-F 1 "100n" H 3492 6855 50  0000 L CNN
-F 2 "" H 3400 6900 50  0001 C CNN
-F 3 "~" H 3400 6900 50  0001 C CNN
-	1    3400 6900
+P 14550 8050
+F 0 "C?" H 14642 8096 50  0000 L CNN
+F 1 "100n" H 14642 8005 50  0000 L CNN
+F 2 "" H 14550 8050 50  0001 C CNN
+F 3 "~" H 14550 8050 50  0001 C CNN
+	1    14550 8050
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:VCC #PWR?
 U 1 1 5FE0A3D7
-P 3400 6800
-F 0 "#PWR?" H 3400 6650 50  0001 C CNN
-F 1 "VCC" H 3415 6973 50  0000 C CNN
-F 2 "" H 3400 6800 50  0001 C CNN
-F 3 "" H 3400 6800 50  0001 C CNN
-	1    3400 6800
+P 14550 7950
+F 0 "#PWR?" H 14550 7800 50  0001 C CNN
+F 1 "VCC" H 14565 8123 50  0000 C CNN
+F 2 "" H 14550 7950 50  0001 C CNN
+F 3 "" H 14550 7950 50  0001 C CNN
+	1    14550 7950
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5FE0A3E1
-P 3400 7000
-F 0 "#PWR?" H 3400 6750 50  0001 C CNN
-F 1 "GND" H 3405 6827 50  0000 C CNN
-F 2 "" H 3400 7000 50  0001 C CNN
-F 3 "" H 3400 7000 50  0001 C CNN
-	1    3400 7000
+P 14550 8150
+F 0 "#PWR?" H 14550 7900 50  0001 C CNN
+F 1 "GND" H 14555 7977 50  0000 C CNN
+F 2 "" H 14550 8150 50  0001 C CNN
+F 3 "" H 14550 8150 50  0001 C CNN
+	1    14550 8150
 	1    0    0    -1  
 $EndComp
 Text Label 1900 4700 0    50   ~ 0
@@ -223,7 +223,7 @@ Wire Wire Line
 	2050 4600 1900 4600
 Wire Wire Line
 	2050 4400 1900 4400
-NoConn ~ 2900 7000
+NoConn ~ 14050 8150
 $Comp
 L MCU_Microchip_ATmega:ATmega128L-8AU U?
 U 1 1 5FDDF59E
@@ -330,38 +330,38 @@ Connection ~ 4000 2250
 Wire Wire Line
 	4000 2500 4000 2450
 Connection ~ 4000 2450
-Text Label 3050 7100 2    50   ~ 0
+Text Label 14200 8250 2    50   ~ 0
 GND
-Text Label 3050 6900 2    50   ~ 0
+Text Label 14200 8050 2    50   ~ 0
 RST
-Text Label 3050 6800 2    50   ~ 0
+Text Label 14200 7950 2    50   ~ 0
 VCC
-Text Label 3050 6700 2    50   ~ 0
+Text Label 14200 7850 2    50   ~ 0
 GND
 Wire Wire Line
-	3050 7100 2900 7100
+	14200 8250 14050 8250
 Wire Wire Line
-	3050 6900 2900 6900
+	14200 8050 14050 8050
 Wire Wire Line
-	3050 6800 2900 6800
+	14200 7950 14050 7950
 Wire Wire Line
-	3050 6700 2900 6700
-Text Label 2250 7100 0    50   ~ 0
+	14200 7850 14050 7850
+Text Label 13400 8250 0    50   ~ 0
 TDI
-Text Label 2250 6900 0    50   ~ 0
+Text Label 13400 8050 0    50   ~ 0
 TMS
-Text Label 2250 6800 0    50   ~ 0
+Text Label 13400 7950 0    50   ~ 0
 TDO
-Text Label 2250 6700 0    50   ~ 0
+Text Label 13400 7850 0    50   ~ 0
 TCK
 Wire Wire Line
-	2400 7100 2250 7100
+	13550 8250 13400 8250
 Wire Wire Line
-	2400 6900 2250 6900
+	13550 8050 13400 8050
 Wire Wire Line
-	2400 6800 2250 6800
+	13550 7950 13400 7950
 Wire Wire Line
-	2400 6700 2250 6700
+	13550 7850 13400 7850
 Text Label 8500 3050 0    50   ~ 0
 B1_SCK
 Text Label 8500 3150 0    50   ~ 0
@@ -1379,7 +1379,7 @@ Wire Wire Line
 Text Notes 2650 9750 0    50   ~ 0
 Watchdog
 Text Label 3450 8750 2    50   ~ 0
-RST
+~RST
 Wire Wire Line
 	3450 8750 3250 8750
 $Comp
@@ -1483,60 +1483,414 @@ WDI
 Wire Wire Line
 	3450 4000 3250 4000
 Wire Wire Line
-	7050 8450 6800 8450
-Text Label 6800 8450 0    50   ~ 0
-MISO
-Text Label 7700 8450 2    50   ~ 0
+	6550 8550 6300 8550
+Text Label 6300 8550 0    50   ~ 0
 MISO
 Wire Wire Line
-	7450 8450 7700 8450
-Wire Wire Line
-	7700 8200 7450 8200
-Text Label 7700 8200 2    50   ~ 0
+	6300 8250 6550 8250
+Text Label 6300 8250 0    50   ~ 0
 MOSI
-Wire Wire Line
-	6800 8200 7050 8200
-Text Label 6800 8200 0    50   ~ 0
-MOSI
-$Comp
-L Connector:TestPoint_2Pole TP?
-U 1 1 6022CDCE
-P 7250 7900
-F 0 "TP?" H 7250 8095 50  0000 C CNN
-F 1 "TestPoint_2Pole" H 7250 8004 50  0000 C CNN
-F 2 "TestPoint:TestPoint_Bridge_Pitch2.54mm_Drill1.0mm" H 7250 7900 50  0001 C CNN
-F 3 "~" H 7250 7900 50  0001 C CNN
-	1    7250 7900
-	1    0    0    -1  
-$EndComp
-Text Label 6800 7900 0    50   ~ 0
+Text Label 6300 7950 0    50   ~ 0
 SCK
 Wire Wire Line
-	6800 7900 7050 7900
-Text Label 7700 7900 2    50   ~ 0
-SCK
+	6300 7950 6550 7950
+Text Label 7300 7950 0    50   ~ 0
+B1_EN
 Wire Wire Line
-	7700 7900 7450 7900
+	7300 7950 7600 7950
+Text Label 7300 8250 0    50   ~ 0
+B2_EN
+Wire Wire Line
+	7300 8250 7600 8250
+Text Label 7300 8550 0    50   ~ 0
+B3_EN
+Wire Wire Line
+	7300 8550 7600 8550
+Wire Wire Line
+	8400 8550 8700 8550
+Wire Wire Line
+	8400 8250 8700 8250
+Text Label 8400 8250 0    50   ~ 0
+C2_CS
+Wire Wire Line
+	8400 7950 8700 7950
+Text Label 8400 7950 0    50   ~ 0
+C1_CS
+Text Label 8400 8550 0    50   ~ 0
+C3_CS
+Text Notes 7600 10750 0    50   ~ 0
+Test Points
+Text Label 7250 9000 0    50   ~ 0
+B2_SCK
+Wire Wire Line
+	7250 9000 7600 9000
+Text Label 7250 9300 0    50   ~ 0
+B2_MOSI
+Wire Wire Line
+	7250 9300 7600 9300
+Text Label 7250 9600 0    50   ~ 0
+B2_MISO
+Wire Wire Line
+	7600 9600 7250 9600
+Text Label 6200 9000 0    50   ~ 0
+B1_SCK
+Wire Wire Line
+	6200 9000 6550 9000
+Text Label 6200 9300 0    50   ~ 0
+B1_MOSI
+Wire Wire Line
+	6200 9300 6550 9300
+Text Label 6200 9600 0    50   ~ 0
+B1_MISO
+Wire Wire Line
+	6550 9600 6200 9600
 $Comp
-L Connector:TestPoint_2Pole TP?
-U 1 1 60299D3C
-P 7250 8200
-F 0 "TP?" H 7250 8395 50  0000 C CNN
-F 1 "TestPoint_2Pole" H 7250 8304 50  0000 C CNN
-F 2 "TestPoint:TestPoint_Bridge_Pitch2.54mm_Drill1.0mm" H 7250 8200 50  0001 C CNN
-F 3 "~" H 7250 8200 50  0001 C CNN
-	1    7250 8200
+L Connector:TestPoint TP?
+U 1 1 604DE049
+P 6550 7950
+F 0 "TP?" V 6504 8138 50  0000 L CNN
+F 1 "TestPoint" V 6595 8138 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Bridge_Pitch2.54mm_Drill1.0mm" H 6750 7950 50  0001 C CNN
+F 3 "~" H 6750 7950 50  0001 C CNN
+	1    6550 7950
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 6051C02B
+P 6550 8250
+F 0 "TP?" V 6504 8438 50  0000 L CNN
+F 1 "TestPoint" V 6595 8438 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Bridge_Pitch2.54mm_Drill1.0mm" H 6750 8250 50  0001 C CNN
+F 3 "~" H 6750 8250 50  0001 C CNN
+	1    6550 8250
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 605241EB
+P 6550 8550
+F 0 "TP?" V 6504 8738 50  0000 L CNN
+F 1 "TestPoint" V 6595 8738 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Bridge_Pitch2.54mm_Drill1.0mm" H 6750 8550 50  0001 C CNN
+F 3 "~" H 6750 8550 50  0001 C CNN
+	1    6550 8550
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 6052CCAD
+P 7600 7950
+F 0 "TP?" V 7554 8138 50  0000 L CNN
+F 1 "TestPoint" V 7645 8138 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Bridge_Pitch2.54mm_Drill1.0mm" H 7800 7950 50  0001 C CNN
+F 3 "~" H 7800 7950 50  0001 C CNN
+	1    7600 7950
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 6052CCB3
+P 7600 8250
+F 0 "TP?" V 7554 8438 50  0000 L CNN
+F 1 "TestPoint" V 7645 8438 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Bridge_Pitch2.54mm_Drill1.0mm" H 7800 8250 50  0001 C CNN
+F 3 "~" H 7800 8250 50  0001 C CNN
+	1    7600 8250
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 6052CCB9
+P 7600 8550
+F 0 "TP?" V 7554 8738 50  0000 L CNN
+F 1 "TestPoint" V 7645 8738 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Bridge_Pitch2.54mm_Drill1.0mm" H 7800 8550 50  0001 C CNN
+F 3 "~" H 7800 8550 50  0001 C CNN
+	1    7600 8550
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 605353BF
+P 8700 7950
+F 0 "TP?" V 8654 8138 50  0000 L CNN
+F 1 "TestPoint" V 8745 8138 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Bridge_Pitch2.54mm_Drill1.0mm" H 8900 7950 50  0001 C CNN
+F 3 "~" H 8900 7950 50  0001 C CNN
+	1    8700 7950
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 605353C5
+P 8700 8250
+F 0 "TP?" V 8654 8438 50  0000 L CNN
+F 1 "TestPoint" V 8745 8438 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Bridge_Pitch2.54mm_Drill1.0mm" H 8900 8250 50  0001 C CNN
+F 3 "~" H 8900 8250 50  0001 C CNN
+	1    8700 8250
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 605353CB
+P 8700 8550
+F 0 "TP?" V 8654 8738 50  0000 L CNN
+F 1 "TestPoint" V 8745 8738 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Bridge_Pitch2.54mm_Drill1.0mm" H 8900 8550 50  0001 C CNN
+F 3 "~" H 8900 8550 50  0001 C CNN
+	1    8700 8550
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 6053DDE9
+P 6550 9000
+F 0 "TP?" V 6504 9188 50  0000 L CNN
+F 1 "TestPoint" V 6595 9188 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Bridge_Pitch2.54mm_Drill1.0mm" H 6750 9000 50  0001 C CNN
+F 3 "~" H 6750 9000 50  0001 C CNN
+	1    6550 9000
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 6053DDEF
+P 6550 9300
+F 0 "TP?" V 6504 9488 50  0000 L CNN
+F 1 "TestPoint" V 6595 9488 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Bridge_Pitch2.54mm_Drill1.0mm" H 6750 9300 50  0001 C CNN
+F 3 "~" H 6750 9300 50  0001 C CNN
+	1    6550 9300
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 6053DDF5
+P 6550 9600
+F 0 "TP?" V 6504 9788 50  0000 L CNN
+F 1 "TestPoint" V 6595 9788 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Bridge_Pitch2.54mm_Drill1.0mm" H 6750 9600 50  0001 C CNN
+F 3 "~" H 6750 9600 50  0001 C CNN
+	1    6550 9600
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 6054634B
+P 7600 9000
+F 0 "TP?" V 7554 9188 50  0000 L CNN
+F 1 "TestPoint" V 7645 9188 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Bridge_Pitch2.54mm_Drill1.0mm" H 7800 9000 50  0001 C CNN
+F 3 "~" H 7800 9000 50  0001 C CNN
+	1    7600 9000
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 60546351
+P 7600 9300
+F 0 "TP?" V 7554 9488 50  0000 L CNN
+F 1 "TestPoint" V 7645 9488 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Bridge_Pitch2.54mm_Drill1.0mm" H 7800 9300 50  0001 C CNN
+F 3 "~" H 7800 9300 50  0001 C CNN
+	1    7600 9300
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 60546357
+P 7600 9600
+F 0 "TP?" V 7554 9788 50  0000 L CNN
+F 1 "TestPoint" V 7645 9788 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Bridge_Pitch2.54mm_Drill1.0mm" H 7800 9600 50  0001 C CNN
+F 3 "~" H 7800 9600 50  0001 C CNN
+	1    7600 9600
+	0    1    1    0   
+$EndComp
+Text Label 8350 9000 0    50   ~ 0
+B3_SCK
+Wire Wire Line
+	8350 9000 8700 9000
+Text Label 8350 9300 0    50   ~ 0
+B3_MOSI
+Wire Wire Line
+	8350 9300 8700 9300
+Text Label 8350 9600 0    50   ~ 0
+B3_MISO
+Wire Wire Line
+	8700 9600 8350 9600
+$Comp
+L Connector:TestPoint TP?
+U 1 1 6055ADDC
+P 8700 9000
+F 0 "TP?" V 8654 9188 50  0000 L CNN
+F 1 "TestPoint" V 8745 9188 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Bridge_Pitch2.54mm_Drill1.0mm" H 8900 9000 50  0001 C CNN
+F 3 "~" H 8900 9000 50  0001 C CNN
+	1    8700 9000
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 6055ADE2
+P 8700 9300
+F 0 "TP?" V 8654 9488 50  0000 L CNN
+F 1 "TestPoint" V 8745 9488 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Bridge_Pitch2.54mm_Drill1.0mm" H 8900 9300 50  0001 C CNN
+F 3 "~" H 8900 9300 50  0001 C CNN
+	1    8700 9300
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 6055ADE8
+P 8700 9600
+F 0 "TP?" V 8654 9788 50  0000 L CNN
+F 1 "TestPoint" V 8745 9788 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Bridge_Pitch2.54mm_Drill1.0mm" H 8900 9600 50  0001 C CNN
+F 3 "~" H 8900 9600 50  0001 C CNN
+	1    8700 9600
+	0    1    1    0   
+$EndComp
+Text Label 6200 10000 0    50   ~ 0
+WDI
+Wire Wire Line
+	6200 10000 6550 10000
+Text Label 6200 10300 0    50   ~ 0
+~RST
+Wire Wire Line
+	6200 10300 6550 10300
+$Comp
+L Connector:TestPoint TP?
+U 1 1 605B413E
+P 6550 10000
+F 0 "TP?" V 6504 10188 50  0000 L CNN
+F 1 "TestPoint" V 6595 10188 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Bridge_Pitch2.54mm_Drill1.0mm" H 6750 10000 50  0001 C CNN
+F 3 "~" H 6750 10000 50  0001 C CNN
+	1    6550 10000
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 605B4144
+P 6550 10300
+F 0 "TP?" V 6504 10488 50  0000 L CNN
+F 1 "TestPoint" V 6595 10488 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Bridge_Pitch2.54mm_Drill1.0mm" H 6750 10300 50  0001 C CNN
+F 3 "~" H 6750 10300 50  0001 C CNN
+	1    6550 10300
+	0    1    1    0   
+$EndComp
+$Comp
+L Regulator_Linear:AP2112K-3.3 U?
+U 1 1 605D3EAD
+P 11750 7950
+F 0 "U?" H 11750 8292 50  0000 C CNN
+F 1 "AP2112K-3.3" H 11750 8201 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 11750 8275 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/AP2112.pdf" H 11750 8050 50  0001 C CNN
+	1    11750 7950
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:TestPoint_2Pole TP?
-U 1 1 602A0B6B
-P 7250 8450
-F 0 "TP?" H 7250 8645 50  0000 C CNN
-F 1 "TestPoint_2Pole" H 7250 8554 50  0000 C CNN
-F 2 "TestPoint:TestPoint_Bridge_Pitch2.54mm_Drill1.0mm" H 7250 8450 50  0001 C CNN
-F 3 "~" H 7250 8450 50  0001 C CNN
-	1    7250 8450
+L power:VCC #PWR?
+U 1 1 605EDBD8
+P 12150 7850
+F 0 "#PWR?" H 12150 7700 50  0001 C CNN
+F 1 "VCC" V 12165 7978 50  0000 L CNN
+F 2 "" H 12150 7850 50  0001 C CNN
+F 3 "" H 12150 7850 50  0001 C CNN
+	1    12150 7850
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 605EEA22
+P 12100 8000
+F 0 "C?" H 12192 8046 50  0000 L CNN
+F 1 "1u" H 12192 7955 50  0000 L CNN
+F 2 "" H 12100 8000 50  0001 C CNN
+F 3 "~" H 12100 8000 50  0001 C CNN
+	1    12100 8000
 	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12050 7850 12100 7850
+Wire Wire Line
+	12100 7850 12100 7900
+Connection ~ 12100 7850
+Wire Wire Line
+	12100 7850 12150 7850
+$Comp
+L power:GND #PWR?
+U 1 1 6061FCA4
+P 12100 8100
+F 0 "#PWR?" H 12100 7850 50  0001 C CNN
+F 1 "GND" H 12105 7927 50  0000 C CNN
+F 2 "" H 12100 8100 50  0001 C CNN
+F 3 "" H 12100 8100 50  0001 C CNN
+	1    12100 8100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11300 7850 11300 7900
+Connection ~ 11300 7850
+Wire Wire Line
+	11300 7850 11250 7850
+$Comp
+L power:GND #PWR?
+U 1 1 60623AF9
+P 11300 8100
+F 0 "#PWR?" H 11300 7850 50  0001 C CNN
+F 1 "GND" H 11305 7927 50  0000 C CNN
+F 2 "" H 11300 8100 50  0001 C CNN
+F 3 "" H 11300 8100 50  0001 C CNN
+	1    11300 8100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 60623AEF
+P 11300 8000
+F 0 "C?" H 11392 8046 50  0000 L CNN
+F 1 "1u" H 11392 7955 50  0000 L CNN
+F 2 "" H 11300 8000 50  0001 C CNN
+F 3 "~" H 11300 8000 50  0001 C CNN
+	1    11300 8000
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	11300 7850 11400 7850
+Wire Wire Line
+	11450 7950 11400 7950
+Wire Wire Line
+	11400 7950 11400 7850
+Connection ~ 11400 7850
+Wire Wire Line
+	11400 7850 11450 7850
+$Comp
+L power:GND #PWR?
+U 1 1 6065928D
+P 11750 8250
+F 0 "#PWR?" H 11750 8000 50  0001 C CNN
+F 1 "GND" H 11755 8077 50  0000 C CNN
+F 2 "" H 11750 8250 50  0001 C CNN
+F 3 "" H 11750 8250 50  0001 C CNN
+	1    11750 8250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 60670055
+P 11250 7850
+F 0 "#PWR?" H 11250 7700 50  0001 C CNN
+F 1 "+5V" V 11265 7978 50  0000 L CNN
+F 2 "" H 11250 7850 50  0001 C CNN
+F 3 "" H 11250 7850 50  0001 C CNN
+	1    11250 7850
+	0    -1   -1   0   
 $EndComp
 $EndSCHEMATC
