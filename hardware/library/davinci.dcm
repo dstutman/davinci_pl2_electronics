@@ -4,6 +4,10 @@ $CMP 48LM01-I_SM
 F https://ww1.microchip.com/downloads/en/DeviceDoc/20006008C.pdf
 $ENDCMP
 #
+$CMP CY62187EV30LL-55BAXI
+F https://www.cypress.com/file/44066/download
+$ENDCMP
+#
 $CMP MC74VHCT126ADR2G
 F https://www.onsemi.com/pub/Collateral/MC74VHCT126A-D.PDF
 $ENDCMP
