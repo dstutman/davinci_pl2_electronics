@@ -158,7 +158,7 @@ F 3 "~" H 900 2400 50  0001 C CNN
 $EndComp
 Text Label 650  2200 0    50   ~ 0
 ~RST
-Text Notes 4650 2450 0    50   ~ 0
+Text Notes 4850 2450 0    50   ~ 0
 ATMega decoupling
 Text Label 1600 4700 0    50   ~ 0
 TDI
@@ -170,8 +170,6 @@ Text Label 1600 4400 0    50   ~ 0
 TCK
 Text Notes 550  2100 0    25   ~ 0
 Should the JTAG reset line be\nplaced before or after current\nlimiting?
-Text Notes 550  1250 0    50   ~ 0
-CRITICAL ELEMENTS:\nMCU\nReset circuit\nDebug circuit\nExternal tuning or clock oscillator?\nOBC connector testpads\nDedicated watchdog\nTest points
 NoConn ~ 2050 2800
 $Comp
 L power:GND #PWR04
@@ -195,8 +193,6 @@ F 3 "" H 2050 2600 50  0001 C CNN
 	1    2050 2600
 	0    1    1    0   
 $EndComp
-Text Notes 4900 1700 0    25   ~ 0
-Is a ferrite on the supply necessary in this application?
 Wire Wire Line
 	2650 1900 2650 1850
 Wire Wire Line
@@ -314,10 +310,6 @@ F 3 "" H 3400 10300 50  0001 C CNN
 	1    3400 10300
 	1    0    0    -1  
 $EndComp
-Text Notes 1550 9450 0    50   ~ 0
-Choose TWD, current selection is 3 seconds
-Text Notes 900  10550 0    25   ~ 0
-Current limiting on set shouldn't be necessary, check this
 $Comp
 L power:GND #PWR012
 U 1 1 601A0442
@@ -393,8 +385,6 @@ Wire Wire Line
 	1600 4600 2050 4600
 Wire Wire Line
 	1600 4700 2050 4700
-Text Notes 2150 700  0    50   ~ 0
-TODO:\nSerial headers
 $Comp
 L MCU_Microchip_ATmega:ATmega128L-8AU U1
 U 1 1 5FDDF59E
@@ -1237,8 +1227,6 @@ F 3 "" H 14750 9400 50  0001 C CNN
 	1    14750 9400
 	1    0    0    -1  
 $EndComp
-Text Notes 12450 8550 0    25   ~ 0
-LDO should be fine with ground\nplane. Shouldn't need to dissipate\nmore than 100 mW
 Text Notes 12450 9550 0    50   ~ 0
 Supply Regulation
 $Comp
@@ -1420,7 +1408,7 @@ F 3 "~" H 14250 9150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 NoConn ~ 14050 9250
-Text Notes 14050 9550 0    50   ~ 0
+Text Notes 13900 9550 0    50   ~ 0
 Debug Connector
 Wire Wire Line
 	13300 5100 13650 5100
@@ -4505,6 +4493,8 @@ Wire Wire Line
 	7850 10100 7850 10200
 Wire Wire Line
 	7850 10200 8100 10200
+Text Notes 2600 9100 0    50   ~ 0
+UART Bridge
 Wire Bus Line
 	10700 10350 10700 10750
 Wire Bus Line
