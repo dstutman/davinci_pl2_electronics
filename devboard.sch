@@ -4249,47 +4249,47 @@ Entry Wire Line
 $Comp
 L Connector:TestPoint TP7
 U 1 1 6AC9D37E
-P 8100 10300
-F 0 "TP7" V 8054 10488 50  0000 L CNN
-F 1 "TestPoint" V 8145 10488 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 8300 10300 50  0001 C CNN
-F 3 "~" H 8300 10300 50  0001 C CNN
-	1    8100 10300
+P 8100 10400
+F 0 "TP7" V 8054 10588 50  0000 L CNN
+F 1 "TestPoint" V 8145 10588 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 8300 10400 50  0001 C CNN
+F 3 "~" H 8300 10400 50  0001 C CNN
+	1    8100 10400
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	7750 10300 8100 10300
-Text Label 7750 10300 0    50   ~ 0
+	7750 10400 8100 10400
+Text Label 7750 10400 0    50   ~ 0
 ~RST
 $Comp
 L Connector:TestPoint TP8
 U 1 1 6A948047
-P 8100 10500
-F 0 "TP8" V 8054 10688 50  0000 L CNN
-F 1 "TestPoint" V 8145 10688 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 8300 10500 50  0001 C CNN
-F 3 "~" H 8300 10500 50  0001 C CNN
-	1    8100 10500
+P 8100 10600
+F 0 "TP8" V 8054 10788 50  0000 L CNN
+F 1 "TestPoint" V 8145 10788 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 8300 10600 50  0001 C CNN
+F 3 "~" H 8300 10600 50  0001 C CNN
+	1    8100 10600
 	0    1    1    0   
 $EndComp
 $Comp
 L Connector:TestPoint TP9
 U 1 1 6A948041
-P 8100 10700
-F 0 "TP9" V 8054 10888 50  0000 L CNN
-F 1 "TestPoint" V 8145 10888 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 8300 10700 50  0001 C CNN
-F 3 "~" H 8300 10700 50  0001 C CNN
-	1    8100 10700
+P 8100 10800
+F 0 "TP9" V 8054 10988 50  0000 L CNN
+F 1 "TestPoint" V 8145 10988 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 8300 10800 50  0001 C CNN
+F 3 "~" H 8300 10800 50  0001 C CNN
+	1    8100 10800
 	0    1    1    0   
 $EndComp
-Text Label 7650 10500 0    50   ~ 0
+Text Label 7650 10600 0    50   ~ 0
 BANK2_EN
 Wire Wire Line
-	7650 10500 8100 10500
+	7650 10600 8100 10600
 Wire Wire Line
-	7650 10700 8100 10700
-Text Label 7650 10700 0    50   ~ 0
+	7650 10800 8100 10800
+Text Label 7650 10800 0    50   ~ 0
 BANK1_EN
 Connection ~ 9250 10750
 Wire Bus Line
@@ -4479,6 +4479,32 @@ Wire Wire Line
 	6550 4400 6600 4400
 Wire Wire Line
 	6550 1100 6600 1100
+$Comp
+L Connector:TestPoint TP11
+U 1 1 6F47491A
+P 8100 10200
+F 0 "TP11" V 8054 10388 50  0000 L CNN
+F 1 "TestPoint" V 8145 10388 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 8300 10200 50  0001 C CNN
+F 3 "~" H 8300 10200 50  0001 C CNN
+	1    8100 10200
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR0164
+U 1 1 6F4EB071
+P 7850 10100
+F 0 "#PWR0164" H 7850 9950 50  0001 C CNN
+F 1 "+5V" V 7865 10228 50  0000 L CNN
+F 2 "" H 7850 10100 50  0001 C CNN
+F 3 "" H 7850 10100 50  0001 C CNN
+	1    7850 10100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7850 10100 7850 10200
+Wire Wire Line
+	7850 10200 8100 10200
 Wire Bus Line
 	10700 10350 10700 10750
 Wire Bus Line
