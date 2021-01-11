@@ -900,8 +900,6 @@ Wire Wire Line
 Connection ~ 750  8100
 Wire Wire Line
 	3750 5250 3750 7150
-Wire Wire Line
-	3900 5150 3900 5250
 $Comp
 L Device:C_Small C28
 U 1 1 665EB623
@@ -1158,11 +1156,6 @@ Wire Wire Line
 	4900 5500 4500 5500
 Wire Wire Line
 	4500 5500 4500 5250
-Wire Wire Line
-	4500 5250 3900 5250
-Connection ~ 3900 5250
-Wire Wire Line
-	3900 5250 3900 7250
 $Comp
 L power:GND #PWR0143
 U 1 1 69996C99
@@ -4495,6 +4488,12 @@ Wire Wire Line
 	7850 10200 8100 10200
 Text Notes 2600 9100 0    50   ~ 0
 UART Bridge
+Text Notes 12000 10400 0    200  Italic 0
+Daniel A. Stutman -2021
+Wire Wire Line
+	3900 5150 3900 7250
+Wire Wire Line
+	3750 5250 4500 5250
 Wire Bus Line
 	10700 10350 10700 10750
 Wire Bus Line
@@ -4531,6 +4530,5 @@ Wire Bus Line
 	10800 2000 10800 4050
 Wire Bus Line
 	8200 2000 8200 4050
-Text Notes 12000 10400 0    200  Italic 0
-Daniel A. Stutman -2021
+Connection ~ 3750 5250
 $EndSCHEMATC
