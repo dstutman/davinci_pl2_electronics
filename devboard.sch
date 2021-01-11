@@ -2917,16 +2917,7 @@ $EndComp
 Wire Wire Line
 	9250 5000 9550 5000
 Wire Wire Line
-	9300 5300 9450 5300
-Wire Wire Line
 	9450 4700 9450 5300
-Connection ~ 9300 5300
-Wire Wire Line
-	9300 5300 9250 5300
-Wire Wire Line
-	9300 5200 9300 5300
-Wire Wire Line
-	9250 5200 9300 5200
 Wire Wire Line
 	9400 6300 9250 6300
 Wire Wire Line
@@ -3165,16 +3156,7 @@ $EndComp
 Wire Wire Line
 	14450 1700 14750 1700
 Wire Wire Line
-	14500 2000 14650 2000
-Wire Wire Line
 	14650 1400 14650 2000
-Connection ~ 14500 2000
-Wire Wire Line
-	14500 2000 14450 2000
-Wire Wire Line
-	14500 1900 14500 2000
-Wire Wire Line
-	14450 1900 14500 1900
 Wire Wire Line
 	14600 3000 14450 3000
 Wire Wire Line
@@ -3343,17 +3325,6 @@ Text Label 13500 1900 0    50   ~ 0
 A0
 Entry Wire Line
 	13400 2000 13500 1900
-$Comp
-L Payload2:CY62158EV30LL-45ZSXIT U8
-U 1 1 60B955E8
-P 14050 2500
-F 0 "U8" H 14050 3565 50  0000 C CNN
-F 1 "CY62158EV30LL-45ZSXIT" H 14050 3474 50  0000 C CNN
-F 2 "Package_SO:TSOP-II-44_10.16x18.41mm_P0.8mm" H 14050 1000 50  0001 C CNN
-F 3 "https://www.cypress.com/file/43811/download" H 14000 2600 50  0001 C CNN
-	1    14050 2500
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	12150 1400 12050 1400
 Connection ~ 12150 1400
@@ -4494,6 +4465,44 @@ Wire Wire Line
 	3900 5150 3900 7250
 Wire Wire Line
 	3750 5250 4500 5250
+Connection ~ 3750 5250
+NoConn ~ 2050 4900
+NoConn ~ 2050 5000
+NoConn ~ 2050 5100
+NoConn ~ 2050 5200
+NoConn ~ 2050 5300
+NoConn ~ 2050 5400
+NoConn ~ 2050 5500
+NoConn ~ 2050 3000
+NoConn ~ 2050 4300
+Wire Wire Line
+	9250 5300 9300 5300
+Wire Wire Line
+	9250 5200 9300 5200
+Wire Wire Line
+	9300 5200 9300 5300
+Connection ~ 9300 5300
+Wire Wire Line
+	9300 5300 9450 5300
+Wire Wire Line
+	14450 1900 14500 1900
+Wire Wire Line
+	14500 1900 14500 2000
+Wire Wire Line
+	14500 2000 14650 2000
+$Comp
+L Payload2:CY62158EV30LL-45ZSXIT U8
+U 1 1 60B955E8
+P 14050 2500
+F 0 "U8" H 14050 3565 50  0000 C CNN
+F 1 "CY62158EV30LL-45ZSXIT" H 14050 3474 50  0000 C CNN
+F 2 "Package_SO:TSOP-II-44_10.16x18.41mm_P0.8mm" H 14050 1000 50  0001 C CNN
+F 3 "https://www.cypress.com/file/43811/download" H 14000 2600 50  0001 C CNN
+	1    14050 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14450 2000 14500 2000
 Wire Bus Line
 	10700 10350 10700 10750
 Wire Bus Line
@@ -4530,5 +4539,5 @@ Wire Bus Line
 	10800 2000 10800 4050
 Wire Bus Line
 	8200 2000 8200 4050
-Connection ~ 3750 5250
+Connection ~ 14500 2000
 $EndSCHEMATC
