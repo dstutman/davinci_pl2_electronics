@@ -8,7 +8,7 @@ Title "Payload 2 Development Board"
 Date ""
 Rev ""
 Comp ""
-Comment1 "Daniel A. Stutman"
+Comment1 ""
 Comment2 ""
 Comment3 ""
 Comment4 ""
@@ -4531,4 +4531,6 @@ Wire Bus Line
 	10800 2000 10800 4050
 Wire Bus Line
 	8200 2000 8200 4050
+Text Notes 12000 10400 0    200  Italic 0
+Daniel A. Stutman -2021
 $EndSCHEMATC
