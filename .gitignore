@@ -27,3 +27,10 @@ fp-info-cache
 *.xml
 *.csv
 *.html
+
+# Plots
+*.pdf
+*.svg
+*.ps
+*.dxf
+*.hpgl

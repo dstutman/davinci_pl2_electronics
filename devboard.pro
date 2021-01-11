@@ -1,4 +1,4 @@
-update=Mon 11 Jan 2021 12:21:23 PM CET
+update=Mon 11 Jan 2021 12:31:44 PM CET
 version=1
 last_client=kicad
 [general]
@@ -34,7 +34,7 @@ LibDir=
 [schematic_editor]
 version=1
 PageLayoutDescrFile=
-PlotDirectoryName=C:/Users/Daniel Stutman/Downloads/
+PlotDirectoryName=./
 SubpartIdSeparator=0
 SubpartFirstId=65
 NetFmtName=
