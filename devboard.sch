@@ -1710,7 +1710,6 @@ Wire Bus Line
 Connection ~ 10800 4050
 Wire Bus Line
 	10800 4050 13400 4050
-Connection ~ 14650 1400
 Wire Wire Line
 	14650 1400 14650 2000
 Wire Wire Line
@@ -3073,8 +3072,6 @@ $EndComp
 Wire Wire Line
 	12050 1400 12800 1400
 Wire Wire Line
-	14650 1400 15000 1400
-Wire Wire Line
 	9450 1400 10200 1400
 Text Label 8450 950  2    50   ~ 0
 ~WE
@@ -3594,7 +3591,6 @@ Wire Bus Line
 	12100 7650 14700 7650
 Wire Bus Line
 	10800 7500 13400 7500
-Connection ~ 14650 4850
 Wire Wire Line
 	14500 5450 14650 5450
 Wire Wire Line
@@ -4161,7 +4157,7 @@ Wire Wire Line
 Wire Wire Line
 	7550 5550 7550 5850
 Wire Wire Line
-	7600 4850 9450 4850
+	7600 4850 7850 4850
 Wire Wire Line
 	10150 5550 10200 5550
 Wire Wire Line
@@ -4184,8 +4180,6 @@ Wire Wire Line
 	9450 4850 10200 4850
 Wire Wire Line
 	12050 4850 12800 4850
-Wire Wire Line
-	14650 4850 15000 4850
 Text Label 14600 5250 2    50   ~ 0
 ~WE
 Text Label 14600 5150 2    50   ~ 0
@@ -4276,10 +4270,6 @@ Wire Wire Line
 	8200 4400 8200 4500
 Wire Wire Line
 	8200 4400 8450 4400
-Wire Wire Line
-	7850 4700 7850 4850
-Wire Wire Line
-	8200 4700 8200 4850
 Text Label 1900 5000 0    50   ~ 0
 ~WE
 Text Label 1900 4900 0    50   ~ 0
@@ -4314,6 +4304,16 @@ Wire Wire Line
 	14550 9350 14750 9350
 Wire Wire Line
 	14750 9350 14750 9400
+Connection ~ 14650 1400
+Wire Wire Line
+	14650 1400 15000 1400
+Wire Wire Line
+	8200 4700 8200 4850
+Connection ~ 8200 4850
+Wire Wire Line
+	8200 4850 9450 4850
+Wire Wire Line
+	7850 4700 7850 4850
 Wire Bus Line
 	11700 10350 11700 10750
 Wire Bus Line
@@ -4350,4 +4350,7 @@ Wire Bus Line
 	10800 5450 10800 7500
 Wire Bus Line
 	8200 5450 8200 7500
+Connection ~ 7850 4850
+Wire Wire Line
+	7850 4850 8200 4850
 $EndSCHEMATC
