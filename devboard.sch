@@ -218,8 +218,6 @@ $EndComp
 Wire Wire Line
 	1200 1800 1200 1850
 Wire Wire Line
-	1500 1850 1200 1850
-Wire Wire Line
 	1500 2150 1500 2200
 Connection ~ 1500 2200
 Wire Wire Line
@@ -4274,17 +4272,6 @@ Text Label 1900 5000 0    50   ~ 0
 ~WE
 Text Label 1900 4900 0    50   ~ 0
 ~OE
-$Comp
-L MCU_Microchip_ATmega:ATmega128L-8AU U1
-U 1 1 5FDDF59E
-P 2650 3900
-F 0 "U1" H 1850 6050 50  0000 C CNN
-F 1 "ATmega128L-8AU" H 2150 5950 50  0000 C CNN
-F 2 "Package_QFP:TQFP-64_14x14mm_P0.8mm" H 2650 3900 50  0001 C CIN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/doc2467.pdf" H 2650 3900 50  0001 C CNN
-	1    2650 3900
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1900 4900 2050 4900
 Wire Wire Line
@@ -4304,9 +4291,6 @@ Wire Wire Line
 	14550 9350 14750 9350
 Wire Wire Line
 	14750 9350 14750 9400
-Connection ~ 14650 1400
-Wire Wire Line
-	14650 1400 15000 1400
 Wire Wire Line
 	8200 4700 8200 4850
 Connection ~ 8200 4850
@@ -4368,39 +4352,52 @@ $EndComp
 Wire Wire Line
 	13600 8600 13600 8650
 Wire Bus Line
+	8200 5450 8200 7500
+Wire Bus Line
+	9500 5850 9500 7650
+Wire Bus Line
+	10800 5450 10800 7500
+Wire Bus Line
+	12100 5850 12100 7650
+Wire Bus Line
+	13400 5450 13400 7500
+Wire Bus Line
+	14700 5850 14700 7650
+Wire Bus Line
+	10250 9750 10250 10750
+Wire Bus Line
+	9250 9750 9250 10750
+Wire Bus Line
 	11700 10350 11700 10750
 Wire Bus Line
 	10700 10350 10700 10750
 Wire Bus Line
-	9500 5850 9500 7650
-Wire Bus Line
-	12100 5850 12100 7650
-Wire Bus Line
-	14700 5850 14700 7650
-Wire Bus Line
-	9250 9750 9250 10750
+	8200 2000 8200 4050
 Wire Bus Line
 	9500 2400 9500 4200
 Wire Bus Line
+	10800 2000 10800 4050
+Wire Bus Line
 	12100 2400 12100 4200
-Wire Bus Line
-	14700 2400 14700 4200
-Wire Bus Line
-	3500 2050 3500 2800
-Wire Bus Line
-	10250 9750 10250 10750
-Wire Bus Line
-	3500 2950 3500 5500
 Wire Bus Line
 	13400 2000 13400 4050
 Wire Bus Line
-	10800 2000 10800 4050
+	14700 2400 14700 4200
 Wire Bus Line
-	8200 2000 8200 4050
+	3500 2950 3500 5500
 Wire Bus Line
-	13400 5450 13400 7500
-Wire Bus Line
-	10800 5450 10800 7500
-Wire Bus Line
-	8200 5450 8200 7500
+	3500 2050 3500 2800
+Wire Wire Line
+	1500 1850 1200 1850
+$Comp
+L MCU_Microchip_ATmega:ATmega128L-8AU U1
+U 1 1 5FDDF59E
+P 2650 3900
+F 0 "U1" H 1850 6050 50  0000 C CNN
+F 1 "ATmega128L-8AU" H 2150 5950 50  0000 C CNN
+F 2 "Package_QFP:TQFP-64_14x14mm_P0.8mm" H 2650 3900 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/doc2467.pdf" H 2650 3900 50  0001 C CNN
+	1    2650 3900
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
