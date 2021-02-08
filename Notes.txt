@@ -1,0 +1,35 @@
+Questions, Answers, and Comments
+================================
+
+n. Question or comment
+| Additional from author
+> (Doc Ref) Answer
+
+1. JTAG current limiting
+> Place before current limiting.
+
+2. Capacitor to ground on reset
+> (AN2519) Retain capacitor if not using DebugWIRE or PDI
+
+3. I2C bus isolator
+| Other slaves on bus are not protected in any way. Are rad hard isolators easy for us to acquire?
+
+4. UART series resistors
+> UART only in use for devboard
+
+5. OBC not rad-hard, has implications for watchdog
+| Is it still necessary to include an additional external rad-hard watchdog on board considering internal watchdog?
+
+6. Devboard LDO not rad-hard
+> Only for USB power to devboard, not on actual payload
+
+7. NPN instead of PNP switch to bank power bus
+> Designer error
+
+8. Memory power limiting resistors
+> Will be implemented
+
+9. Power via input lines and IO bus
+| Asked Dr. Puchner (Cypress), may be issue
+| Should independent switching of each bus be eliminated considering additional complexity in favor of payload wide control?
+| Can we easily source a radiation hard line driver for each bank, or a mux?
