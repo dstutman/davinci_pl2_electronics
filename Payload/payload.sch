@@ -4,11 +4,11 @@ EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 1
-Title ""
+Title "Payload Two"
 Date ""
 Rev ""
 Comp ""
-Comment1 ""
+Comment1 "Daniel Stutman - 2021"
 Comment2 ""
 Comment3 ""
 Comment4 ""
@@ -644,8 +644,8 @@ F 3 "~" H 6350 2450 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6350 2250 6350 2350
-Text Notes 6100 1300 0    50   ~ 0
-TODO:\nCheck cutoff freq of decoupling\nCant use BJT, too much drop
+Text Notes 6000 1500 0    50   ~ 0
+TODO:\nCheck cutoff freq of decoupling\nAdd programming header\nAdd testpoints\nLayout optimization of pin assignments\n\nNote:\nCant use BJT, too much drop
 Wire Wire Line
 	8750 5050 8750 5100
 Wire Wire Line
@@ -819,18 +819,15 @@ Wire Wire Line
 	2900 1750 3000 1750
 Wire Wire Line
 	3000 1250 3000 1750
-Wire Wire Line
-	3000 1250 3000 1150
-Connection ~ 3000 1250
 $Comp
 L power:VCC #PWR?
 U 1 1 60725407
-P 3000 1150
-F 0 "#PWR?" H 3000 1000 50  0001 C CNN
-F 1 "VCC" H 3015 1323 50  0000 C CNN
-F 2 "" H 3000 1150 50  0001 C CNN
-F 3 "" H 3000 1150 50  0001 C CNN
-	1    3000 1150
+P 3000 950
+F 0 "#PWR?" H 3000 800 50  0001 C CNN
+F 1 "VCC" H 3015 1123 50  0000 C CNN
+F 2 "" H 3000 950 50  0001 C CNN
+F 3 "" H 3000 950 50  0001 C CNN
+	1    3000 950 
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1063,10 +1060,6 @@ Wire Bus Line
 	9750 5500 3850 5500
 Wire Bus Line
 	7750 5400 4900 5400
-Wire Wire Line
-	8050 3050 7450 3050
-Wire Wire Line
-	8050 2950 7350 2950
 Text Label 7800 3150 0    50   ~ 0
 M1_CE
 Wire Wire Line
@@ -1205,13 +1198,194 @@ F 3 "" H 8000 9350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7350 2950 7350 5650
-Wire Wire Line
-	7450 3050 7450 5650
-Wire Wire Line
 	1400 3700 2200 3700
 Wire Wire Line
 	1500 3800 2200 3800
+$Comp
+L Payload2:LTC1153IS8-PBF U?
+U 1 1 6052ADAC
+P 11600 7000
+F 0 "U?" H 11600 7753 60  0000 C CNN
+F 1 "LTC1153IS8-PBF" H 11600 7647 60  0000 C CNN
+F 2 "SOIC-8_S_LIT" H 12500 7240 60  0001 C CNN
+F 3 "" H 10800 7100 60  0000 C CNN
+	1    11600 7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 60546454
+P 1650 2000
+F 0 "R?" V 1600 1850 50  0000 C CNN
+F 1 "R_Small_US" H 1900 2100 50  0000 C CNN
+F 2 "" H 1650 2000 50  0001 C CNN
+F 3 "~" H 1650 2000 50  0001 C CNN
+	1    1650 2000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 6055F678
+P 1850 2200
+F 0 "C?" H 1850 2150 50  0000 R CNN
+F 1 "100 nF" V 1750 2350 50  0000 R CNN
+F 2 "" H 1850 2200 50  0001 C CNN
+F 3 "~" H 1850 2200 50  0001 C CNN
+	1    1850 2200
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 605900BB
+P 1850 1800
+F 0 "R?" V 1800 1650 50  0000 C CNN
+F 1 "R_Small_US" H 2100 1900 50  0000 C CNN
+F 2 "" H 1850 1800 50  0001 C CNN
+F 3 "~" H 1850 1800 50  0001 C CNN
+	1    1850 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 2000 1850 2000
+Wire Wire Line
+	1850 2000 1850 1900
+Wire Wire Line
+	1850 2000 1850 2100
+$Comp
+L power:GND #PWR?
+U 1 1 605C0FA7
+P 1850 2400
+F 0 "#PWR?" H 1850 2150 50  0001 C CNN
+F 1 "GND" H 1855 2227 50  0000 C CNN
+F 2 "" H 1850 2400 50  0001 C CNN
+F 3 "" H 1850 2400 50  0001 C CNN
+	1    1850 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 2400 1850 2300
+$Comp
+L power:VCC #PWR?
+U 1 1 605CE630
+P 1850 1600
+F 0 "#PWR?" H 1850 1450 50  0001 C CNN
+F 1 "VCC" H 1865 1773 50  0000 C CNN
+F 2 "" H 1850 1600 50  0001 C CNN
+F 3 "" H 1850 1600 50  0001 C CNN
+	1    1850 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 1600 1850 1700
+$Comp
+L Switch:SW_SPST SW?
+U 1 1 605DC322
+P 1250 2000
+F 0 "SW?" H 1250 2235 50  0000 C CNN
+F 1 "SW_SPST" H 1250 2144 50  0000 C CNN
+F 2 "" H 1250 2000 50  0001 C CNN
+F 3 "~" H 1250 2000 50  0001 C CNN
+	1    1250 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1450 2000 1550 2000
+$Comp
+L power:GND #PWR?
+U 1 1 60605C42
+P 950 2150
+F 0 "#PWR?" H 950 1900 50  0001 C CNN
+F 1 "GND" H 955 1977 50  0000 C CNN
+F 2 "" H 950 2150 50  0001 C CNN
+F 3 "" H 950 2150 50  0001 C CNN
+	1    950  2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	950  2000 1050 2000
+Wire Wire Line
+	950  2000 950  2150
+Connection ~ 1850 2000
+Wire Wire Line
+	1850 2000 2200 2000
+$Comp
+L Jumper:Jumper_2_Bridged JP?
+U 1 1 60656522
+P 2050 2500
+F 0 "JP?" V 2096 2412 50  0000 R CNN
+F 1 "Jumper_2_Bridged" V 2005 2412 50  0000 R CNN
+F 2 "" H 2050 2500 50  0001 C CNN
+F 3 "~" H 2050 2500 50  0001 C CNN
+	1    2050 2500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2050 2200 2050 2300
+$Comp
+L power:GND #PWR?
+U 1 1 60666794
+P 2050 2800
+F 0 "#PWR?" H 2050 2550 50  0001 C CNN
+F 1 "GND" H 2055 2627 50  0000 C CNN
+F 2 "" H 2050 2800 50  0001 C CNN
+F 3 "" H 2050 2800 50  0001 C CNN
+	1    2050 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 2700 2050 2800
+Wire Wire Line
+	2050 2200 2200 2200
+Wire Wire Line
+	7800 3050 8050 3050
+Entry Wire Line
+	7800 2950 7700 3050
+Wire Wire Line
+	7800 2950 8050 2950
+Text Label 7800 3050 0    50   ~ 0
+~WE
+Text Label 7800 2950 0    50   ~ 0
+~OE
+Entry Wire Line
+	7800 3050 7700 3150
+Wire Wire Line
+	1950 5200 2200 5200
+Entry Wire Line
+	1950 5100 1850 5200
+Wire Wire Line
+	1950 5100 2200 5100
+Text Label 1950 5200 0    50   ~ 0
+~WE
+Text Label 1950 5100 0    50   ~ 0
+~OE
+Entry Wire Line
+	1950 5200 1850 5300
+Wire Bus Line
+	7700 5800 1850 5800
+Text Label 1950 5000 0    50   ~ 0
+M1_CE
+Wire Wire Line
+	1950 5000 2200 5000
+$Comp
+L Device:R_Small_US R?
+U 1 1 607AC261
+P 3000 1100
+F 0 "R?" V 3050 1250 50  0000 C CNN
+F 1 "R_Small_US" V 3050 800 50  0000 C CNN
+F 2 "" H 3000 1100 50  0001 C CNN
+F 3 "~" H 3000 1100 50  0001 C CNN
+	1    3000 1100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3000 1200 3000 1250
+Connection ~ 3000 1250
+Wire Wire Line
+	3000 1000 3000 950 
+Wire Bus Line
+	7700 3050 7700 5800
+Wire Bus Line
+	1850 5200 1850 5800
 Wire Bus Line
 	4900 2100 4900 5400
 Wire Bus Line
