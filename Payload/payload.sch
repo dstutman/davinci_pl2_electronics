@@ -644,8 +644,8 @@ F 3 "~" H 6350 2450 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6350 2250 6350 2350
-Text Notes 6000 1500 0    50   ~ 0
-TODO:\nCheck cutoff freq of decoupling\nAdd programming header\nAdd testpoints\nLayout optimization of pin assignments\nCheck that external supply connects to Vin, not Vcc\n\nNote:\nCant use BJT, too much drop\nWhen voltage at MCU is lower than drain, body diode conduction will equalize\nComparator checks resistor for quick cutoff if latched
+Text Notes 6000 1550 0    50   ~ 0
+TODO:\nCheck cutoff freq of decoupling\nAdd programming header\nAdd testpoints\nLayout optimization of pin assignments\nCheck that external supply connects to Vin, not Vcc\nActually connect sense resistor pins for memory power\nto comparator pins\n\nNote:\nCant use BJT, too much drop\nWhen voltage at MCU is lower than drain, body diode conduction will equalize\nComparator checks resistor for quick cutoff if latched
 Wire Wire Line
 	8750 5050 8750 5100
 Wire Wire Line
