@@ -2913,9 +2913,6 @@ Wire Wire Line
 	10750 13650 11050 13650
 Wire Wire Line
 	10750 13750 11050 13750
-Wire Wire Line
-	7550 4500 7550 7900
-Connection ~ 7550 4500
 $Comp
 L Device:R_Small_US R13
 U 1 1 6078DA87
@@ -3278,6 +3275,48 @@ Wire Wire Line
 	10350 3900 12450 3900
 Wire Wire Line
 	4850 3500 5000 3500
+$Comp
+L Device:R_Small_US R?
+U 1 1 60735361
+P 7450 4800
+F 0 "R?" H 7600 4850 50  0000 C CNN
+F 1 "R_Small_US" H 7600 4750 50  0000 C CNN
+F 2 "" H 7450 4800 50  0001 C CNN
+F 3 "~" H 7450 4800 50  0001 C CNN
+	1    7450 4800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7450 4700 7450 4600
+Wire Wire Line
+	7450 4600 7550 4600
+Wire Wire Line
+	7550 4600 7550 4500
+Connection ~ 7550 4500
+Wire Wire Line
+	7550 4600 7650 4600
+Wire Wire Line
+	7650 4600 7650 4700
+Connection ~ 7550 4600
+$Comp
+L Device:R_Small_US R?
+U 1 1 6092031B
+P 7650 4800
+F 0 "R?" H 7800 4850 50  0000 C CNN
+F 1 "R_Small_US" H 7800 4750 50  0000 C CNN
+F 2 "" H 7650 4800 50  0001 C CNN
+F 3 "~" H 7650 4800 50  0001 C CNN
+	1    7650 4800
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	7450 4900 7450 5000
+Wire Wire Line
+	7450 5000 7550 5000
+Wire Wire Line
+	7650 5000 7650 4900
+Wire Wire Line
+	7550 5000 7550 7900
 Wire Bus Line
 	18700 5000 18700 7750
 Wire Bus Line
@@ -3308,4 +3347,7 @@ Wire Bus Line
 	17550 4600 17550 7450
 Wire Bus Line
 	20750 4600 20750 7450
+Connection ~ 7550 5000
+Wire Wire Line
+	7550 5000 7650 5000
 $EndSCHEMATC
