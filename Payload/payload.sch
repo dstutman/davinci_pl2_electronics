@@ -24,10 +24,6 @@ F 3 "~" H 5350 3950 50  0001 C CNN
 	1    5350 3950
 	0    1    1    0   
 $EndComp
-Text Label 1600 5650 0    50   ~ 0
-I2C3_SCL
-Text Label 1600 5750 0    50   ~ 0
-I2C3_SDA
 Text Label 10950 4500 0    50   ~ 0
 A0
 Text Label 10950 4600 0    50   ~ 0
@@ -632,28 +628,6 @@ Connection ~ 9000 4800
 Wire Wire Line
 	10200 3900 9350 3900
 Connection ~ 9350 3900
-$Comp
-L Device:R_Small_US R3
-U 1 1 6068B4BE
-P 2300 5750
-F 0 "R3" V 2250 5600 50  0000 C CNN
-F 1 "200 R" V 2250 5850 50  0000 C CNN
-F 2 "" H 2300 5750 50  0001 C CNN
-F 3 "~" H 2300 5750 50  0001 C CNN
-	1    2300 5750
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R_Small_US R2
-U 1 1 6068B4C4
-P 2300 5650
-F 0 "R2" V 2250 5500 50  0000 C CNN
-F 1 "200 R" V 2450 5750 50  0000 C CNN
-F 2 "" H 2300 5650 50  0001 C CNN
-F 3 "~" H 2300 5650 50  0001 C CNN
-	1    2300 5650
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	9450 6100 9350 6100
 Wire Wire Line
@@ -1975,8 +1949,6 @@ Wire Wire Line
 Wire Wire Line
 	16600 3900 16700 3900
 Connection ~ 2600 5650
-Wire Wire Line
-	2500 5750 2700 5750
 Connection ~ 2700 5750
 $Comp
 L Device:R_Small_US R11
@@ -2983,62 +2955,6 @@ Wire Wire Line
 Wire Wire Line
 	21050 3900 21050 4000
 $Comp
-L Device:R_Small_US R1
-U 1 1 61105287
-P 2300 5550
-F 0 "R1" V 2250 5400 50  0000 C CNN
-F 1 "200 R" V 2250 5650 50  0000 C CNN
-F 2 "" H 2300 5550 50  0001 C CNN
-F 3 "~" H 2300 5550 50  0001 C CNN
-	1    2300 5550
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R_Small_US R4
-U 1 1 6110528D
-P 2300 5850
-F 0 "R4" V 2250 5700 50  0000 C CNN
-F 1 "200 R" V 2450 5950 50  0000 C CNN
-F 2 "" H 2300 5850 50  0001 C CNN
-F 3 "~" H 2300 5850 50  0001 C CNN
-	1    2300 5850
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	2400 5650 2500 5650
-Wire Wire Line
-	2400 5550 2500 5550
-Wire Wire Line
-	2500 5550 2500 5650
-Connection ~ 2500 5650
-Wire Wire Line
-	2500 5650 2600 5650
-Wire Wire Line
-	2500 5750 2500 5850
-Wire Wire Line
-	2500 5850 2400 5850
-Wire Wire Line
-	2500 5750 2400 5750
-Connection ~ 2500 5750
-Wire Wire Line
-	1600 5650 2100 5650
-Wire Wire Line
-	1600 5750 2100 5750
-Wire Wire Line
-	2200 5550 2100 5550
-Wire Wire Line
-	2100 5550 2100 5650
-Connection ~ 2100 5650
-Wire Wire Line
-	2100 5650 2200 5650
-Wire Wire Line
-	2100 5750 2100 5850
-Wire Wire Line
-	2100 5850 2200 5850
-Connection ~ 2100 5750
-Wire Wire Line
-	2100 5750 2200 5750
-$Comp
 L Connector:Conn_ARM_JTAG_SWD_10 J1
 U 1 1 606D5873
 P 12650 10750
@@ -3127,7 +3043,7 @@ Text Notes 9000 2500 0    50   ~ 0
 Text Template
 Text Notes 21250 4000 0    50   ~ 0
 Guarantees rail -> 0 within known time
-Text Notes 850  5150 0    50   ~ 0
+Text Notes 1600 4750 0    50   ~ 0
 Internal RC sufficient for operation,\nthis gains a few percent memory clock.
 Wire Wire Line
 	12700 12100 12700 12150
@@ -3317,6 +3233,83 @@ Wire Wire Line
 	7650 5000 7650 4900
 Wire Wire Line
 	7550 5000 7550 7900
+Connection ~ 7550 5000
+Wire Wire Line
+	7550 5000 7650 5000
+$Comp
+L Isolator:ISO1541 U?
+U 1 1 60830529
+P 1600 5650
+F 0 "U?" H 1600 6017 50  0000 C CNN
+F 1 "ISO1541" H 1600 5926 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 1600 5300 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/iso1541.pdf" H 1600 5700 50  0001 C CNN
+	1    1600 5650
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 5750 2700 5750
+Wire Wire Line
+	2000 5650 2600 5650
+Wire Wire Line
+	2000 5550 2100 5550
+$Comp
+L power:GND #PWR?
+U 1 1 60A7FE9C
+P 1600 6150
+F 0 "#PWR?" H 1600 5900 50  0001 C CNN
+F 1 "GND" H 1605 5977 50  0000 C CNN
+F 2 "" H 1600 6150 50  0001 C CNN
+F 3 "" H 1600 6150 50  0001 C CNN
+	1    1600 6150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 6050 1600 6150
+$Comp
+L power:VCC #PWR?
+U 1 1 60B3F22B
+P 1600 5100
+F 0 "#PWR?" H 1600 4950 50  0001 C CNN
+F 1 "VCC" H 1615 5273 50  0000 C CNN
+F 2 "" H 1600 5100 50  0001 C CNN
+F 3 "" H 1600 5100 50  0001 C CNN
+	1    1600 5100
+	1    0    0    -1  
+$EndComp
+Text Label 800  5650 0    50   ~ 0
+I2C3_SCL
+Text Label 800  5750 0    50   ~ 0
+I2C3_SDA
+Wire Wire Line
+	800  5750 1200 5750
+Wire Wire Line
+	1200 5650 800  5650
+Wire Wire Line
+	2100 5550 2100 5200
+Wire Wire Line
+	2100 5200 1600 5200
+Wire Wire Line
+	1600 5200 1600 5100
+Wire Wire Line
+	1600 5200 1100 5200
+Wire Wire Line
+	1100 5200 1100 5550
+Wire Wire Line
+	1100 5550 1200 5550
+Connection ~ 1600 5200
+Wire Wire Line
+	2000 5850 2100 5850
+Wire Wire Line
+	2100 5850 2100 6050
+Wire Wire Line
+	2100 6050 1600 6050
+Wire Wire Line
+	1200 5850 1100 5850
+Wire Wire Line
+	1100 5850 1100 6050
+Wire Wire Line
+	1100 6050 1600 6050
 Wire Bus Line
 	18700 5000 18700 7750
 Wire Bus Line
@@ -3347,7 +3340,5 @@ Wire Bus Line
 	17550 4600 17550 7450
 Wire Bus Line
 	20750 4600 20750 7450
-Connection ~ 7550 5000
-Wire Wire Line
-	7550 5000 7650 5000
+Connection ~ 1600 6050
 $EndSCHEMATC
