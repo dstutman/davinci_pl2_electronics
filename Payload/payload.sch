@@ -1188,7 +1188,6 @@ Wire Wire Line
 	5550 3950 5550 4050
 Wire Wire Line
 	4800 3550 4800 3650
-Connection ~ 5700 4050
 Wire Wire Line
 	4950 3650 4800 3650
 Connection ~ 4950 3650
@@ -1823,26 +1822,6 @@ Wire Wire Line
 	8950 13000 9250 13000
 Wire Wire Line
 	8950 13100 9250 13100
-$Comp
-L Device:R_Small_US R13
-U 1 1 6078DA87
-P 5850 3850
-F 0 "R13" H 5750 3800 50  0000 C CNN
-F 1 "100 K" V 5750 3650 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 5850 3850 50  0001 C CNN
-F 3 "~" H 5850 3850 50  0001 C CNN
-	1    5850 3850
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	5850 3750 5850 3650
-Wire Wire Line
-	5850 3650 5700 3650
-Connection ~ 5700 3650
-Wire Wire Line
-	5700 4050 5850 4050
-Wire Wire Line
-	5850 4050 5850 3950
 $Comp
 L power:GND #PWR029
 U 1 1 60E627F2
